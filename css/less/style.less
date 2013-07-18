@@ -1,0 +1,140 @@
+/*
+Theme Name: Centered Child Theme
+Theme URI: https://github.com/eightbit/standard-child-themes/tree/master/centered
+Version: 3.2.1
+Description: This is a custom child theme kit for Standard 3.
+Author: Jason Bradley
+Author URI: http://everchangingmedia.com
+Author Email: jason.bradley@me.com
+License: GNU General Public License v3.0 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Template: standard
+*/
+
+
+/* Import Standard Styles
+---------------------------------------------------------------------------------- */
+
+@import url( '../../standard/style.css' );
+@import url( '../../standard/css/theme-responsive.css' );
+
+/* Uncomment the line below to enable child theme right-to-left language support. */
+/* @import url( '../standard/rtl.css' ); */
+
+
+/* Customizations
+---------------------------------------------------------------------------------- */
+
+.sidebar { 
+	.widget {
+		margin-bottom: 30px;
+	}
+	.widget_search {
+		margin-bottom: 10px;
+		form {
+			margin-bottom: 0;
+		}
+	}
+	.standard-google-custom-search {
+		margin-bottom: 10px;
+	} // .standard-google-custom-search
+}
+
+#sidebars {
+	margin-left: -10px;
+}
+
+.breadcrumb, 
+.widget, 
+.post-header, 
+#logo, 
+#archive-page-title, 
+#author-box,
+#pings, 
+#no-comments,
+#respond,
+.comment-form-comment,
+#footer #sub-floor #credit, 
+#sub-floor {
+	text-align: center;
+}
+
+#logo,
+#header-widget,
+.author-box-image,
+#commentform #comment-form-wrapper,
+#commentform #comment-form-avatar,
+.comment-form-comment,
+#footer #footer-links, 
+#footer #sub-floor #credit {
+	float: none;
+}
+
+.post-header .thumbnail, #comment-form-avatar {
+	border: none;
+	margin-bottom: 20px;
+	.no_shadow();
+}
+
+.dropdown-menu li a {
+	text-align: left;
+}
+
+
+/* Media Queries
+---------------------------------------------------------------------------------- */
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 979px) {	
+			
+}
+
+/* Mobile to Tablet */
+@media only screen and (max-width: 767px) {
+	
+}
+
+
+/* Landscape Tablets */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Desktop */
+@media (min-width: 980px) {
+	.navbar .nav,
+	.navbar .nav > li {
+	    float:none;
+	    display:inline-block;
+	    *display:inline; /* ie7 fix */
+	    *zoom:1; /* hasLayout ie7 trigger */
+	    vertical-align: top;
+	}
+	
+	.navbar-inner {
+	    text-align:center;
+	}
+	
+	.menu-header-container {
+		width: 100%;
+	}
+	
+	#social-networking {
+		float: none;
+		margin-right: 0px;
+	}
+}
+
+// Mixins
+
+.no_shadow() {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
